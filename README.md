@@ -29,17 +29,23 @@ You will need the following dependencies installed in order to run the applicati
 
 Run the `npm` install target:
 
-```npm install```
+```
+npm install
+```
 
 ### Local Development
 
-```ng serve```
+```
+ng serve
+```
 
 to run the project, and navigate to [http://localhost:4200](http://localhost:4200) (if you run `ng serve --open` a browser will open for you automatically). Hot-reloading is enabled in development by default.
 
 ### Running Tests
 
-```ng test```
+```
+ng test
+```
 
 runs the unit tests
 
@@ -55,7 +61,9 @@ This project is configured to run on [Heroku](https://www.heroku.com/).
 
 Run 
 
-```heroku create```
+```
+heroku create
+```
 
 to generate a new Heroku application. This will also add the `heroku` git remote repository to your configuration:
 
@@ -71,7 +79,9 @@ origin	git@github.com:benburton/grubfinder-client.git (push)
 
 You should simply be able to run
 
-```git push heroku master```
+```
+git push heroku master
+```
 
 for a working deployment to your Heroku application (note that when pushing to Heroku your app will default to targeting the "production" `http://grubfinder-api.herokuapp.com/` endpoint).
 
