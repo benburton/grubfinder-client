@@ -1,7 +1,9 @@
 # grubfinder-client
 [![Logo](src/assets/logo.png)](src/assets/logo.png)
 
-This is a client for the GrubFinder application, whose purpose is to aggregate all grading and reporting for New York City restaurants and to display them in a digestible (heh) way.
+This is a client for the GrubFinder application, whose purpose is to aggregate all grading and reporting for New York 
+City restaurants and to display them in a digestible (heh) way. You can find the corresponding `grubfinder-server` code
+[over here](https://github.com/benburton/grubfinder-server).
 
 [![Screenshot](screenshot.png)](screenshot.png)
 
