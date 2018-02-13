@@ -1,0 +1,31 @@
+<div *ngIf="restaurant" class="restaurant-details">
+  <div class="title">
+    <gf-grade-badge [grade]="restaurant.grade" modifier="large"></gf-grade-badge>
+    <span class="business-name">{{restaurant.doingBusinessAs}}</span>
+  </div>
+
+  <mat-accordion *ngIf="restaurant">
+    <mat-expansion-panel [expanded]="first" *ngFor="let inspection of restaurant.inspections; let first = first;">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Inspection {{inspection.date | date: 'M/d/yy'}}</mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="inspection">
+        <div class="inspection-type"><strong>Inspection Type:</strong> {{inspection.inspectionType}}</div>
+        <div class="inspection-score">
+          <strong>Inspection Score:</strong> {{inspection.score ? inspection.score : 'None'}}
+        </div>
+        <div class="inspection-violations"><strong>Inspection Violations:</strong></div>
+        <ul class="violations" *ngIf="inspection.violations.length > 0; else noViolations;">
+          <li class="violation"
+              *ngFor="let violation of inspection.violations;"
+              [matTooltip]="violation.description" matTooltipPosition="above">
+            {{violation.code}}
+          </li>
+        </ul>
+        <ng-template #noViolations>
+          <div class="inspection-no-violations">No violations!</div>
+        </ng-template>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

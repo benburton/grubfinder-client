@@ -1,0 +1,2 @@
+describe('GrubFinder-client App', () => {
+});

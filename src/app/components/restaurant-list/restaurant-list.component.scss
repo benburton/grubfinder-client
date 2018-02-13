@@ -1,0 +1,13 @@
+.restaurant {
+
+  cursor: pointer;
+
+  &:hover {
+    background: #ccc;
+  }
+
+  &.selected {
+    background: #aaa;
+  }
+
+}

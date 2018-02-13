@@ -1,0 +1,30 @@
+$height: 64px;
+
+.sticky {
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  height: $height;
+  padding: 5px 0;
+  top: 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+
+  .logo {
+    height: 30px;
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+
+.main,
+.side-nav {
+  margin-top: $height;
+  padding: 15px;
+}
+
+.side-nav {
+  width: 400px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}

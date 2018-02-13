@@ -1,0 +1,63 @@
+@import '../../styles/inspection-colors';
+@import '../../styles/font-sizes';
+
+$size-small: 30px;
+$size-large: 60px;
+
+:host {
+  display: inline-block;
+  cursor: default;
+}
+
+.grade-badge {
+  text-transform: uppercase;
+  background-image: url('./nyc-state-seal.png');
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0 auto;
+
+  &.grade-a {
+    color: $inspection-color-a;
+  }
+
+  &.grade-b {
+    color: $inspection-color-b;
+  }
+
+  &.grade-c {
+    color: $inspection-color-c;
+  }
+
+  &.grade-pending {
+    color: $inspeciton-color-pending;
+  }
+
+  &.grade-badge-small {
+    $size: $size-small;
+    height: $size;
+    width: $size;
+    font-size: 20px;
+    background-size: $size $size;
+  }
+
+  &.grade-badge-large {
+    $size: $size-large;
+    height: $size;
+    width: $size;
+    font-size: 40px;
+    background-size: $size $size;
+  }
+
+}
+
+.grade-badge-copy {
+  text-transform: uppercase;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  width: $size-large;
+  text-align: center;
+  line-height: $font-size-xs;
+}

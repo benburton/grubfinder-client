@@ -1,0 +1,41 @@
+@import '../../styles/colors';
+@import '../../styles/font-sizes';
+
+.restaurant-details {
+  .title {
+    padding: 15px;
+  }
+}
+
+.business-name {
+  font-size: $font-size-large;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.inspection {
+  padding-left: 10px;
+
+  .inspection-violations,
+  .inspection-no-violations {
+    display: inline-block;
+  }
+}
+
+.violations {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+
+  .violation {
+    display: inline-block;
+    color: white;
+    background: #292526;
+    padding: 2px 4px;
+    font-size: $font-size-small;
+    margin: 0 2px;
+    border-radius: 4px;
+    cursor: default;
+  }
+
+}

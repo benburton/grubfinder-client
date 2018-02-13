@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="sticky">
+  <mat-toolbar-row>
+    <img class="logo" src="/assets/logo.png"/>
+    <gf-restaurant-filter
+      [descriptions]="descriptions$ | async"
+      [query]="restaurantQuery$ | async"
+      (filterChange)="filterChange($event)"
+    ></gf-restaurant-filter>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="main">
+  <mat-sidenav-container>
+
+    <mat-sidenav-content>
+      <gf-restaurant-list-container></gf-restaurant-list-container>
+    </mat-sidenav-content>
+
+    <mat-sidenav mode="side" position="end" [opened]="true" [fixedInViewport]="true" class="side-nav">
+      <gf-restaurant-stats [stats]="stats$ | async"></gf-restaurant-stats>
+      <gf-inspection-details [restaurant]="selectedRestaurant$ | async"></gf-inspection-details>
+    </mat-sidenav>
+
+  </mat-sidenav-container>
+</div>
