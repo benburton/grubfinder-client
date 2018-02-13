@@ -7,7 +7,7 @@ City restaurants and to display them in a digestible (heh) way. You can find the
 
 [![Screenshot](screenshot.png)](screenshot.png)
 
-You can view a live deployment at [http://grubfinder-web.herokuapp.com/](http://grubfinder-web.herokuapp.com/) (a little slow, as its on a free dyno).
+You can view a live deployment at [http://grubfinder-web.herokuapp.com/](http://grubfinder-web.herokuapp.com/) (a little slow, as it's on a free dyno).
 
 ## Features
 - Dropdowns to select multiple grades (most recent) as well as cuisine descriptions.
